@@ -58,7 +58,6 @@ class ProductEditScreen extends Screen
 
     public function save(Request $request)
     {
-        Alert::info('Yарпвпарпврпрduct.');
         $productData = $request->input('product');
         $product = new Product($productData);
         $product->save();

@@ -16,3 +16,4 @@ Route::middleware(['web', 'platform'])
 Route::get('/', function () {
     return view('welcome');
 });
+

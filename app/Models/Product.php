@@ -13,6 +13,13 @@ class Product extends Model
     protected $fillable = [
         'name',
         'price',
-        // Добавьте сюда все остальные поля, которые могут быть массово назначены
+        
     ];
+
+
+    public function getContent()
+    {
+        
+        return "Name: " . $this->name . ", Price: " . $this->price;
+    }
 }
